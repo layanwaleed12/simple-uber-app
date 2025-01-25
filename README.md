@@ -83,13 +83,12 @@ o	Ensure to grant location permissions for features like route selection and rid
 o	Notifications are enabled for reminders and updates.
 ________________________________________
 ## Future Work
-1.	Enhanced User Profiles: 
-o	Add support for profile pictures and custom preferences.
-2.	Multilingual Support: 
+
+1.	Multilingual Support: 
 o	Introduce multiple language options .
-3.	Improved UI/UX: 
+2.	Improved UI/UX: 
 o	Update the interface for a more modern and interactive user experience. 
-4.	Enhanced "With Me" Feature:
+3.	Enhanced "With Me" Feature:
 o	Expand this feature to allow scheduled rides and better community engagement.
 o	Make the "With Me" feature a regular option for daily trips.
 
