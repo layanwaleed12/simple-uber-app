@@ -26,15 +26,22 @@ o	For Web: npm run web
 ________________________________________
 ## Version
 •	WithMe App Version: 1.0.0 (as per app.json and package.json)
+
 •	Expo Version: ~52.0.23
+
 •	React Native Version: 0.76.5
 ________________________________________
 ## Technical Stack
 •	Development Tools: Visual Studio Code, Android Simulator, Expo Go
+
 •	Core Libraries: 
+
 o	expo-notifications: For handling notifications
+
 o	react-navigation: For navigation
+
 o	firebase: For backend database and authentication
+
 o	react-native-vector-icons: For icons
 ________________________________________
 ## Navigation Structure
@@ -74,22 +81,28 @@ o	Open the RouteSelectionScreen to choose a preferred route for your ride.
 o	The stack navigator initializes with the SplashScreen, which transitions automatically to the HomeScreen after a brief delay.
 ________________________________________
 ## Extra Information
-•	Default Credentials: 
-o	Username: guest
-o	Password: 1234
+
 •	Location Permissions: 
+
 o	Ensure to grant location permissions for features like route selection and ride options.
-•	Notification Permissions: 
-o	Notifications are enabled for reminders and updates.
+
+•	Password: 10 digits  
+
 ________________________________________
 ## Future Work
 
-1.	Multilingual Support: 
+1.	Multilingual Support:
+   
 o	Introduce multiple language options .
-2.	Improved UI/UX: 
+
+2.	Improved UI/UX:
+   
 o	Update the interface for a more modern and interactive user experience. 
+
 3.	Enhanced "With Me" Feature:
+	
 o	Expand this feature to allow scheduled rides and better community engagement.
+
 o	Make the "With Me" feature a regular option for daily trips.
 
 ________________________________________
