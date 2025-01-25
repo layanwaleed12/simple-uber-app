@@ -2,7 +2,9 @@
 WithMe is a React Native mobile application designed to provide seamless navigation and feature-rich functionality. It is a simple app inspired by ride-sharing services like Uber, with an extra feature called "With Me" that enhances the user experience by adding personalized and community-driven functionalities. This document details the application setup, technical stack, navigation structure, and steps for interaction.
 ________________________________________
 # Description
-WithMe is built using modern technologies to ensure a smooth user experience across different platforms. The app includes various screens such as a dashboard, services, activity, and account management, with a custom tab navigator for easy navigation. The "With Me" feature provides unique capabilities for users to connect and share rides effectively.
+WithMe is built using modern technologies to ensure a smooth user experience across different platforms. The app includes various screens such as a dashboard, services, activity, and account management, with a custom tab navigator for easy navigation. The "With Me" feature allows users to act as both passengers and drivers, making it possible for someone going to a destination (e.g., college) to pick up others nearby heading in the same direction. This feature promotes community-driven and cost-effective ride-sharing.
+
+
 ________________________________________
 # Setup and Installation
 Prerequisites
