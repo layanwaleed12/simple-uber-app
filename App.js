@@ -10,7 +10,11 @@ import AccountScreen from './With-me/AccountScreen';
 import HomeScreen from './With-me/HomeScreen';
 import WalletScreen from './With-me/WalletScreen';
 import HelpScreen from './With-me/HelpScreen';
-import ChooseRideScreen from './With-me/ChooseRideScreen'; // إضافة شاشة ChooseRideScreen
+import RouteSelectionScreen from './With-me/RouteSelectionScreen';
+import CarRegistrationScreen from './With-me/CarRegistrationScreen';
+import LookForPassenger from './With-me/LookForPassenger';
+import LocationSelectionScreen from './With-me/LocationSelectionScreen';
+import ChooseRideScreen from './With-me/ChooseRideScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createStackNavigator();
@@ -52,37 +56,73 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: true }}>
+        {/* شاشة البداية */}
         <Stack.Screen
           name="Home"
           component={HomeScreen}
           options={{ title: 'Welcome' }}
         />
+        {/* شاشة تسجيل الدخول */}
         <Stack.Screen
           name="Login"
           options={{ title: 'Login' }}
         >
           {(props) => <LoginScreen {...props} setUsername={setUsername} />}
         </Stack.Screen>
+        {/* التبويبات الرئيسية */}
         <Stack.Screen
           name="MainTabs"
           options={{ title: 'Main Tabs' }}
         >
           {(props) => <TabNavigator {...props} username={username} />}
         </Stack.Screen>
+        {/* شاشة المحفظة */}
         <Stack.Screen
           name="Wallet"
           component={WalletScreen}
           options={{ title: 'Wallet' }}
         />
+        {/* شاشة المساعدة */}
         <Stack.Screen
           name="Help"
           component={HelpScreen}
           options={{ title: 'Help' }}
         />
+        {/* شاشة تسجيل السيارة */}
         <Stack.Screen
-          name="ChooseRide"
+          name="CarRegistrationScreen"
+          component={CarRegistrationScreen}
+          options={{ title: 'Car Registration' }}
+        />
+        {/* شاشة اختيار الوجهة */}
+        <Stack.Screen
+          name="RouteSelectionScreen"
+          component={RouteSelectionScreen}
+          options={{ title: 'Route Selection' }}
+        />
+        {/* شاشة البحث عن الراكب */}
+        <Stack.Screen
+          name="LookForPassenger"
+          component={LookForPassenger}
+          options={{ title: 'Looking for Passenger' }}
+        />
+        {/* شاشة تحديد الموقع */}
+        <Stack.Screen
+          name="LocationSelectionScreen"
+          component={LocationSelectionScreen}
+          options={{ title: 'Select Location' }}
+        />
+        {/* شاشة اختيار الرحلة */}
+        <Stack.Screen
+          name="ChooseRideScreen"
           component={ChooseRideScreen}
           options={{ title: 'Choose a Ride' }}
+        />
+        {/* شاشة Dashboard */}
+        <Stack.Screen
+          name="DashboardScreen"
+          component={DashboardScreen}
+          options={{ title: 'Dashboard' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
