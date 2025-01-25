@@ -2,7 +2,9 @@
 WithMe is a React Native mobile application designed to provide seamless navigation and feature-rich functionality. It is a simple app inspired by ride-sharing services like Uber, with an extra feature called "With Me" that enhances the user experience by adding personalized and community-driven functionalities. This document details the application setup, technical stack, navigation structure, and steps for interaction.
 ________________________________________
 # Description
-WithMe is built using modern technologies to ensure a smooth user experience across different platforms. The app includes various screens such as a dashboard, services, activity, and account management, with a custom tab navigator for easy navigation. The "With Me" feature provides unique capabilities for users to connect and share rides effectively.
+WithMe is built using modern technologies to ensure a smooth user experience across different platforms. The app includes various screens such as a dashboard, services, activity, and account management, with a custom tab navigator for easy navigation. The "With Me" feature allows users to act as both passengers and drivers, making it possible for someone going to a destination (e.g., college) to pick up others nearby heading in the same direction. This feature promotes community-driven and cost-effective ride-sharing.
+
+
 ________________________________________
 # Setup and Installation
 Prerequisites
@@ -24,15 +26,22 @@ o	For Web: npm run web
 ________________________________________
 ## Version
 •	WithMe App Version: 1.0.0 (as per app.json and package.json)
+
 •	Expo Version: ~52.0.23
+
 •	React Native Version: 0.76.5
 ________________________________________
 ## Technical Stack
 •	Development Tools: Visual Studio Code, Android Simulator, Expo Go
+
 •	Core Libraries: 
+
 o	expo-notifications: For handling notifications
+
 o	react-navigation: For navigation
+
 o	firebase: For backend database and authentication
+
 o	react-native-vector-icons: For icons
 ________________________________________
 ## Navigation Structure
@@ -72,27 +81,34 @@ o	Open the RouteSelectionScreen to choose a preferred route for your ride.
 o	The stack navigator initializes with the SplashScreen, which transitions automatically to the HomeScreen after a brief delay.
 ________________________________________
 ## Extra Information
-•	Default Credentials: 
-o	Username: guest
-o	Password: 1234
+
 •	Location Permissions: 
+
 o	Ensure to grant location permissions for features like route selection and ride options.
-•	Notification Permissions: 
-o	Notifications are enabled for reminders and updates.
+
+•	Password: 10 digits  
+
 ________________________________________
 ## Future Work
-1.	Enhanced User Profiles: 
-o	Add support for profile pictures and custom preferences.
-2.	Multilingual Support: 
+
+1.	Multilingual Support:
+   
 o	Introduce multiple language options .
-3.	Improved UI/UX: 
+
+2.	Improved UI/UX:
+   
 o	Update the interface for a more modern and interactive user experience. 
-4.	Enhanced "With Me" Feature:
+
+3.	Enhanced "With Me" Feature:
+	
 o	Expand this feature to allow scheduled rides and better community engagement.
+
 o	Make the "With Me" feature a regular option for daily trips.
 
 ________________________________________
 ## Resources 
 https://firebase.google.com/
+
+
 https://lottiefiles.com/
 
