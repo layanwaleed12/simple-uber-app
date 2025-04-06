@@ -1,19 +1,23 @@
-import { getDatabase, ref, set } from "firebase/database";
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps } from 'firebase/app';
+import { getDatabase, ref, set, update, remove, get } from 'firebase/database';
 
+// Your new Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyDWjxYELnMlG8XH1a2KwdLx04YXT9Bh0LM",
-  authDomain: "withme-a3020.firebaseapp.com",
-  databaseURL: "https://withme-a3020-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "withme-a3020",
-  storageBucket: "withme-a3020.appspot.com",
-  messagingSenderId: "674708257212",
-  appId: "1:674708257212:web:5f5142b4830a0b56c153b9",
-  measurementId: "G-HBRDWDCX1Q"
+  apiKey: "AIzaSyDxVst_3_mi57ZeAYXa1SbTdysB5MVGhZ4",
+  authDomain: "layanr-592a3.firebaseapp.com",
+  databaseURL: "https://layanr-592a3-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "layanr-592a3",
+  storageBucket: "layanr-592a3.appspot.com",
+  messagingSenderId: "829248876910",
+  appId: "1:829248876910:web:31f4258f2e16fdb433d17f",
+  measurementId: "G-NH2008J0D2"
 };
 
-const app = initializeApp(firebaseConfig);
+// Initialize Firebase only if not already initialized
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 const database = getDatabase(app);
 
-export { database, ref, set };
+// Export what you need
+export { database, ref, set, update, remove, get };
+
 
